@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Force)",
+      "Bash(cd d:\\\\\\\\saantech\\\\\\\\diginep-next)",
+      "Bash(ls -la \"/mnt/d/saantech/diginep-next\")",
+      "Read(//mnt/d/saantech/**)",
+      "Bash(npx next *)"
+    ]
+  }
+}
