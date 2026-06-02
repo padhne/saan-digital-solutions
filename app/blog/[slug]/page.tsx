@@ -10,7 +10,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) return {};
-  return { title: `${post.title} — SAAN Digital Solutions Blog`, description: post.excerpt };
+  return {
+    title: `${post.title} | SAAN Digital Solutions Blog`,
+    description: post.excerpt,
+    alternates: { canonical: `https://saandigitalsolutions.com/blog/${slug}` },
+    openGraph: {
+      title: `${post.title} | SAAN Digital Solutions`,
+      description: post.excerpt,
+      url: `https://saandigitalsolutions.com/blog/${slug}`,
+      type: "article",
+      siteName: "SAAN Digital Solutions",
+    },
+    twitter: { card: "summary_large_image", title: post.title, description: post.excerpt },
+  };
 }
 
 const colorMap: Record<string, string> = {

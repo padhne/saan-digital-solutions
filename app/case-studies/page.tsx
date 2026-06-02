@@ -4,8 +4,20 @@ import TiltCard from "@/components/TiltCard";
 import Reveal3D from "@/components/Reveal3D";
 
 export const metadata = {
-  title: "Case Studies — SAAN Digital Solutions | Real Results for Real Businesses",
-  description: "See how SAAN Digital Solutions has delivered measurable growth for businesses across Nepal and worldwide.",
+  title: "Case Studies | Proven Results for Nepal Businesses — SAAN Digital Solutions",
+  description: "See exactly how SAAN Digital Solutions helped Nepal businesses grow online — real SEO rankings, website builds, ad campaign results, and revenue growth. 10+ successful projects.",
+  keywords: [
+    "SAAN Digital case studies", "digital agency results Nepal", "SEO success Nepal",
+    "web development portfolio Nepal", "digital marketing results Kathmandu",
+    "Nepal business growth case study", "SAAN Digital portfolio",
+  ],
+  alternates: { canonical: "https://saandigitalsolutions.com/case-studies" },
+  openGraph: {
+    title: "Case Studies | Real Results for Nepal Businesses — SAAN Digital Solutions",
+    description: "Real proof: how SAAN Digital Solutions grew Nepal businesses with SEO, web development, and digital marketing. 10+ projects delivered.",
+    url: "https://saandigitalsolutions.com/case-studies",
+    type: "website",
+  },
 };
 
 const colorMap: Record<string, string> = {

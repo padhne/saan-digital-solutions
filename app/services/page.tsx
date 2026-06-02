@@ -4,8 +4,21 @@ import TiltCard from "@/components/TiltCard";
 import Reveal3D from "@/components/Reveal3D";
 
 export const metadata = {
-  title: "Services — SAAN Digital Solutions | Web Development, SEO, Ads & More",
-  description: "Full-stack digital services: web & app development, SEO, GEO, ads campaigns, content creation, and AI automation.",
+  title: "Digital Services Nepal | Web Dev, SEO, Ads & AI Automation — SAAN Digital Solutions",
+  description: "Full-stack digital services for Nepal businesses: custom web & app development, SEO, GEO optimization, Google & Meta ads, content creation, brand design, and AI automation. SAAN Digital Solutions, Kathmandu.",
+  keywords: [
+    "web development services Nepal", "SEO services Nepal", "digital marketing services Nepal",
+    "app development Kathmandu", "GEO optimization Nepal", "Google ads management Nepal",
+    "Facebook ads Nepal", "AI automation Nepal", "brand design Nepal", "content creation Nepal",
+    "SAAN Digital services", "full stack development Nepal",
+  ],
+  alternates: { canonical: "https://saandigitalsolutions.com/services" },
+  openGraph: {
+    title: "Digital Services | Web Dev, SEO, Ads & AI — SAAN Digital Solutions Nepal",
+    description: "Everything your Nepal business needs: web & app development, SEO, GEO, paid ads, content, and AI automation under one roof.",
+    url: "https://saandigitalsolutions.com/services",
+    type: "website",
+  },
 };
 
 const colorMap: Record<string, string> = {

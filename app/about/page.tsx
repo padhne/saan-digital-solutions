@@ -4,8 +4,19 @@ import CountUp3D from "@/components/CountUp3D";
 import Reveal3D from "@/components/Reveal3D";
 
 export const metadata = {
-  title: "About — SAAN Digital Solutions | Nepal's Full-Stack Digital Growth Team",
-  description: "Learn about SAAN Digital Solutions — our story, team, values, and mission to power digital growth for businesses across Nepal and worldwide.",
+  title: "About SAAN Digital Solutions | Nepal's Leading Digital Agency Team",
+  description: "Meet the team behind SAAN Digital Solutions — Nepal's top digital growth agency based in Kathmandu. 5+ years delivering web development, SEO & marketing excellence for businesses worldwide.",
+  keywords: [
+    "about SAAN Digital Solutions", "SAAN Digital team", "Nepal digital agency team",
+    "Kathmandu digital agency", "SAAN Solutions about", "who is SAAN Digital",
+  ],
+  alternates: { canonical: "https://saandigitalsolutions.com/about" },
+  openGraph: {
+    title: "About SAAN Digital Solutions | Nepal's Leading Digital Agency",
+    description: "Meet the expert team behind Nepal's #1 digital agency. 5+ years, 10+ projects, Kathmandu-based, serving worldwide.",
+    url: "https://saandigitalsolutions.com/about",
+    type: "website",
+  },
 };
 
 const team = [

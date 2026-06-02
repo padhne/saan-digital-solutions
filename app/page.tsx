@@ -1,5 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { services, stats, testimonials } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "SAAN Digital Solutions | Web Development, SEO & Digital Marketing Nepal",
+  description: "Nepal's #1 full-stack digital agency. We build websites, apps & systems — then grow them with SEO, GEO, paid ads & AI automation. Based in Kathmandu. Free consultation.",
+  keywords: [
+    "SAAN Digital Solutions", "SAAN Digital", "digital agency Nepal", "web development Nepal",
+    "SEO Nepal", "digital marketing Kathmandu", "app development Nepal", "GEO optimization",
+    "Google ads Nepal", "Facebook ads Nepal", "AI automation Nepal", "web design Nepal",
+  ],
+  alternates: { canonical: "https://saandigitalsolutions.com" },
+  openGraph: {
+    title: "SAAN Digital Solutions | Web Development, SEO & Digital Marketing Nepal",
+    description: "Nepal's #1 full-stack digital agency. Web development, SEO, GEO, paid ads & AI automation — one team, total execution. Free consultation.",
+    url: "https://saandigitalsolutions.com",
+    type: "website",
+  },
+};
 import HeroCanvasClient from "@/components/HeroCanvasClient";
 import Service3DIcon from "@/components/Service3DIcon";
 import TiltCard from "@/components/TiltCard";

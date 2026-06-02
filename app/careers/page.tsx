@@ -4,8 +4,20 @@ import TiltCard from "@/components/TiltCard";
 import Reveal3D from "@/components/Reveal3D";
 
 export const metadata = {
-  title: "Careers — SAAN Digital Solutions | Join Nepal's Top Digital Agency",
-  description: "Join SAAN Digital Solutions and help build Nepal's digital future. We're hiring developers, marketers, and designers.",
+  title: "Careers at SAAN Digital Solutions | Jobs in Digital Agency Nepal",
+  description: "Join Nepal's fastest-growing digital agency. SAAN Digital Solutions is hiring web developers, SEO specialists, marketers & designers in Kathmandu. Competitive pay, remote-friendly. Apply now.",
+  keywords: [
+    "jobs Nepal digital agency", "developer jobs Kathmandu", "SEO jobs Nepal",
+    "digital marketing jobs Nepal", "careers SAAN Digital Solutions",
+    "web developer jobs Nepal", "remote jobs Nepal digital", "SAAN Digital hiring",
+  ],
+  alternates: { canonical: "https://saandigitalsolutions.com/careers" },
+  openGraph: {
+    title: "Careers | Join SAAN Digital Solutions — Nepal's Top Digital Agency",
+    description: "We're hiring! Web developers, SEO specialists & marketers. Join Nepal's #1 digital agency in Kathmandu.",
+    url: "https://saandigitalsolutions.com/careers",
+    type: "website",
+  },
 };
 
 const colorMap: Record<string, string> = {
