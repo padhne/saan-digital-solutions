@@ -386,10 +386,10 @@ export const testimonials = [
 
 // ==================== STATS ====================
 export const stats = [
-  { num: 150, suffix: "+", label: "Projects Delivered", sub: "Across 12+ industries" },
+  { num: 10, suffix: "+", label: "Projects Delivered", sub: "Across 12+ industries" },
   { num: 98, suffix: "%", label: "Client Retention", sub: "Satisfaction rate" },
-  { num: 4, suffix: "+", label: "Years of Excellence", sub: "In digital growth" },
-  { num: 10, suffix: "+", label: "Countries Served", sub: "Nepal & worldwide" },
+  { num: 5, suffix: "+", label: "Years of Excellence", sub: "In digital growth" },
+  { num: 3, suffix: "+", label: "Countries Served", sub: "Nepal & worldwide" },
 ];
 
 // ==================== PRICING ====================

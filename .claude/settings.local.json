@@ -5,7 +5,9 @@
       "Bash(cd d:\\\\\\\\saantech\\\\\\\\diginep-next)",
       "Bash(ls -la \"/mnt/d/saantech/diginep-next\")",
       "Read(//mnt/d/saantech/**)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(del \"d:\\\\saan-digital-solutions\\\\app\\\\favicon.ico\")",
+      "PowerShell(Remove-Item \"d:\\\\saan-digital-solutions\\\\app\\\\favicon.ico\" -Confirm:$false)"
     ]
   }
 }

@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "SAAN Digital Solutions — From Development to Execution | Nepal's #1 Digital Growth Platform",
   description: "SAAN Digital Solutions is Nepal's leading full-stack digital platform — web & app development, SEO, GEO, AI marketing, ads campaigns, content creation, and growth analytics.",
   keywords: "digital agency Nepal, software development Nepal, SEO Nepal, web development Kathmandu, digital marketing Nepal",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "SAAN Digital Solutions — From Development to Execution",
     description: "Nepal's #1 digital growth platform. Dev to execution in one team.",

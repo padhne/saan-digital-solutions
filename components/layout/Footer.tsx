@@ -52,19 +52,11 @@ export default function Footer() {
           {/* ── Brand ── */}
           <div>
             <Link href="/" style={{ textDecoration: "none", display: "inline-block", marginBottom: "1.4rem" }}>
-              <div style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.08)",
-                borderRadius: 14,
-                padding: "0.65rem 1.1rem",
-                display: "inline-block",
-              }}>
-                <img
-                  src="/footer-logo.png"
-                  alt="SAAN Digital Solutions"
-                  style={{ height: 48, width: "auto", objectFit: "contain", display: "block" }}
-                />
-              </div>
+              <img
+                src="/footer-logo.png"
+                alt="SAAN Digital Solutions"
+                style={{ height: 72, width: "auto", objectFit: "contain", display: "block" }}
+              />
             </Link>
 
             <p style={{ fontSize: "0.875rem", color: "var(--white-dim)", lineHeight: 1.8, maxWidth: 270, marginBottom: "2rem" }}>
