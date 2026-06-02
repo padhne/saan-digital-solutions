@@ -47,7 +47,7 @@ export default function Chatbot() {
     } catch {
       setMessages(prev => [
         ...prev,
-        { role: "assistant", content: "Sorry, I'm having trouble connecting. Please contact us directly at hello@saandigital.com or WhatsApp us!" },
+        { role: "assistant", content: "Sorry, I'm having trouble connecting. Please contact us directly at hello@saandigitalsolutions.com or WhatsApp us!" },
       ]);
     } finally {
       setLoading(false);

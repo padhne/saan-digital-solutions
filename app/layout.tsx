@@ -108,7 +108,7 @@ export default function RootLayout({
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "contactType": "customer service",
-                    "email": "hello@saandigital.com",
+                    "email": "hello@saandigitalsolutions.com",
                     "availableLanguage": ["English", "Nepali"],
                   },
                   "areaServed": ["Nepal", "India", "United States", "United Kingdom", "Australia"],
@@ -129,7 +129,7 @@ export default function RootLayout({
                   "name": "SAAN Digital Solutions",
                   "image": "https://saandigitalsolutions.com/logo.png",
                   "url": "https://saandigitalsolutions.com",
-                  "email": "hello@saandigital.com",
+                  "email": "hello@saandigitalsolutions.com",
                   "priceRange": "NPR 25,000+",
                   "currenciesAccepted": "NPR, USD",
                   "paymentAccepted": "Bank Transfer, eSewa, Khalti",

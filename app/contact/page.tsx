@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 
 const contactItems = [
   { icon: "📍", label: "Location", value: "Kathmandu, Nepal · Serving worldwide" },
-  { icon: "📧", label: "Email", value: "hello@saandigital.com", href: "mailto:hello@saandigital.com" },
+  { icon: "📧", label: "Email", value: "hello@saandigitalsolutions.com", href: "mailto:hello@saandigitalsolutions.com" },
   { icon: "💬", label: "WhatsApp Nepal", value: "+977 98XX-XXXXXX", href: "https://wa.me/977XXXXXXXXXX" },
   { icon: "⏰", label: "Response Time", value: "Within 2 hours · Sun–Fri 9am–6pm NPT" },
 ];

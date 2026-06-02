@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     // const resend = new Resend(process.env.RESEND_API_KEY);
     // await resend.emails.send({
     //   from: 'SAAN Digital Solutions <noreply@saandigital.com>',
-    //   to: ['hello@saandigital.com'],
+    //   to: ['hello@saandigitalsolutions.com'],
     //   subject: `New Lead: ${name} — ${service}`,
     //   html: `<h2>New Contact Form Submission</h2>
     //          <p><strong>Name:</strong> ${name}</p>

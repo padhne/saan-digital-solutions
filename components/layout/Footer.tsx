@@ -23,7 +23,7 @@ const footerLinks = {
     { label: "LinkedIn",  href: "#"                             },
     { label: "Facebook",  href: "#"                             },
     { label: "TikTok",    href: "#"                             },
-    { label: "Email Us",  href: "mailto:hello@saandigital.com"  },
+    { label: "Email Us",  href: "mailto:hello@saandigitalsolutions.com"  },
   ],
 };
 

@@ -11,7 +11,7 @@ About SAAN Digital Solutions:
 - Services: Web & App Development, Brand & UI/UX Design, SEO & GEO Optimization, Ads Campaigns (Meta, Google, TikTok), Content Creation, AI Integration & Automation
 - Pricing: Custom — discussed directly with the client after an initial discovery call
 - Location: Kathmandu, Nepal (serving worldwide)
-- Contact: hello@saandigital.com | WhatsApp: +977 98XX-XXXXXX
+- Contact: hello@saandigitalsolutions.com | WhatsApp: +977 98XX-XXXXXX
 - Response time: Within 2 hours
 
 Your role:
@@ -26,11 +26,11 @@ Keep responses under 100 words. Be helpful and direct.`;
 
 // Fallback responses when OpenAI is not configured
 const FALLBACK_RESPONSES: Record<string, string> = {
-  default: "Thanks for reaching out! I'm SAAN Digital Solutions's AI assistant. Our team specializes in web development, SEO, GEO, ads campaigns, and content creation. Would you like to book a free discovery call? Contact us at hello@saandigital.com or WhatsApp us directly!",
+  default: "Thanks for reaching out! I'm SAAN Digital Solutions's AI assistant. Our team specializes in web development, SEO, GEO, ads campaigns, and content creation. Would you like to book a free discovery call? Contact us at hello@saandigitalsolutions.com or WhatsApp us directly!",
   services: "SAAN Digital Solutions offers: 💻 Web & App Development, 🎨 Brand & UI/UX Design, 🔍 SEO & GEO Optimization, 🎯 Ads Campaigns, ✍️ Content Creation, and 🤖 AI Integration. Which one interests you most?",
   pricing: "Our pricing is tailored to each client's goals and scope — we don't believe in one-size-fits-all packages. Book a free discovery call and we'll put together a custom proposal for you!",
   seo: "Our SEO & GEO service covers technical SEO, content optimization, link building, and AI search optimization (GEO) so you rank on both Google and ChatGPT/Perplexity. Let's discuss what's right for your business!",
-  start: "Great! Starting is easy. You can: 1) Fill out our contact form at /contact, 2) WhatsApp us directly, or 3) Email hello@saandigital.com. We'll set up a free 30-minute discovery call to map your growth strategy!",
+  start: "Great! Starting is easy. You can: 1) Fill out our contact form at /contact, 2) WhatsApp us directly, or 3) Email hello@saandigitalsolutions.com. We'll set up a free 30-minute discovery call to map your growth strategy!",
   cost: "We custom-price every engagement based on your specific goals and scope. Book a free discovery call and we'll send you a tailored proposal — no commitment required!",
 };
 
