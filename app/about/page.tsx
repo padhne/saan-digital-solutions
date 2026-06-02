@@ -18,10 +18,10 @@ const team = [
 ];
 
 const statsData = [
-  { num: 150, suffix: "+", label: "Projects Delivered" },
+  { num: 10, suffix: "+", label: "Projects Delivered" },
   { num: 98, suffix: "%", label: "Client Retention" },
-  { num: 4,  suffix: "+", label: "Years Operating" },
-  { num: 10, suffix: "+", label: "Countries Served" },
+  { num: 5,  suffix: "+", label: "Years Operating" },
+  { num: 3, suffix: "+", label: "Countries Served" },
 ];
 
 const values = [
@@ -35,7 +35,7 @@ const storyParas = [
   "SAAN Digital Solutions was founded in 2021 by Nawaj Sarif after years of watching brilliant businesses struggle online — not because they lacked quality, but because they lacked digital execution.",
   "The first clients were local Nepal businesses: restaurants, trekking companies, and retailers. The results were transformational — and word spread fast.",
   "Today, SAAN Digital Solutions operates as a full-stack digital platform with specialists in development, design, SEO, GEO, paid media, and content — all under one roof, all working toward one goal: your growth.",
-  "We remain proudly based in Kathmandu while serving clients across Nepal, India, the UK, the US, and Australia.",
+  "We remain proudly based in Kathmandu while serving clients across Nepal, India, and the US.",
 ];
 
 export default function AboutPage() {

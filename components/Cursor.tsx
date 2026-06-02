@@ -11,6 +11,7 @@ export default function Cursor() {
     if (!cursor || !ring) return;
 
     let mx = 0, my = 0, rx = 0, ry = 0;
+    let rafId: number;
 
     const onMove = (e: MouseEvent) => {
       mx = e.clientX; my = e.clientY;
@@ -23,11 +24,11 @@ export default function Cursor() {
       ry += (my - ry) * 0.12;
       ring.style.left = rx + "px";
       ring.style.top = ry + "px";
-      requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
     };
+    rafId = requestAnimationFrame(animate);
 
     document.addEventListener("mousemove", onMove);
-    animate();
 
     const growEls = document.querySelectorAll("a, button, [data-cursor-grow]");
     const onEnter = () => { cursor.classList.add("grow"); ring.classList.add("grow"); };
@@ -39,7 +40,12 @@ export default function Cursor() {
     });
 
     return () => {
+      cancelAnimationFrame(rafId);
       document.removeEventListener("mousemove", onMove);
+      growEls.forEach(el => {
+        el.removeEventListener("mouseenter", onEnter);
+        el.removeEventListener("mouseleave", onLeave);
+      });
     };
   }, []);
 

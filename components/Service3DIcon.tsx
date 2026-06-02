@@ -102,13 +102,14 @@ export default function Service3DIcon({ serviceId, size = 80 }: Props) {
 
     let animId: number;
     let renderer: import("three").WebGLRenderer;
+    let cleanup: (() => void) | undefined;
 
     import("three").then((T) => {
       const cfg = CONFIGS[serviceId] ?? CONFIGS["web-development"];
 
       /* Renderer */
-      renderer = new T.WebGLRenderer({ alpha: true, antialias: true });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer = new T.WebGLRenderer({ alpha: true, antialias: false });
+      renderer.setPixelRatio(1);
       renderer.setSize(size, size);
       renderer.setClearColor(0x000000, 0);
       mount.appendChild(renderer.domElement);
@@ -131,22 +132,44 @@ export default function Service3DIcon({ serviceId, size = 80 }: Props) {
       const mesh = cfg.build(T);
       scene.add(mesh);
 
+      /* Pause when tab is hidden */
+      const onVisibility = () => {
+        if (document.hidden) {
+          cancelAnimationFrame(animId);
+        } else {
+          tick();
+        }
+      };
+      document.addEventListener("visibilitychange", onVisibility);
+
       /* Animate */
-      const tick = () => {
+      function tick() {
         animId = requestAnimationFrame(tick);
         mesh.rotation.x += cfg.rx;
         mesh.rotation.y += cfg.ry;
         mesh.rotation.z += cfg.rz;
         renderer.render(scene, camera);
-      };
+      }
       tick();
+
+      cleanup = () => {
+        cancelAnimationFrame(animId);
+        document.removeEventListener("visibilitychange", onVisibility);
+        mesh.children.forEach((child) => {
+          const m = child as import("three").Mesh;
+          m.geometry?.dispose();
+          if (Array.isArray(m.material)) m.material.forEach(x => x.dispose());
+          else (m.material as import("three").Material)?.dispose();
+        });
+        mesh.geometry.dispose();
+        if (Array.isArray(mesh.material)) mesh.material.forEach(x => x.dispose());
+        else (mesh.material as import("three").Material)?.dispose();
+        renderer.dispose();
+        if (mount.firstChild) mount.removeChild(mount.firstChild);
+      };
     });
 
-    return () => {
-      cancelAnimationFrame(animId);
-      renderer?.dispose();
-      if (mount.firstChild) mount.removeChild(mount.firstChild);
-    };
+    return () => cleanup?.();
   }, [serviceId, size]);
 
   return (
