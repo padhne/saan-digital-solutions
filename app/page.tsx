@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <>
       {/* ══════════════════ HERO ══════════════════ */}
-      <section style={{
+      <section className="hero-section" style={{
         position: "relative", minHeight: "100vh",
         display: "flex", alignItems: "center",
         padding: "8rem 5% 5rem", overflow: "hidden",
@@ -102,7 +102,7 @@ export default function Home() {
           </p>
 
           {/* CTAs */}
-          <div style={{
+          <div className="hero-ctas" style={{
             display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "3.5rem",
             animation: "fadeUp 0.8s 0.24s cubic-bezier(0.16,1,0.3,1) both",
           }}>
@@ -152,7 +152,7 @@ export default function Home() {
       {/* ══════════════════ STATS ══════════════════ */}
       <div style={{ background: "linear-gradient(135deg, #2D1F8A 0%, #4C1D95 45%, #3730A3 100%)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 60% 80% at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 70%)" }} />
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", position: "relative" }}>
+        <div className="rg-4" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", position: "relative" }}>
           {stats.map((s, i) => (
             <Reveal3D key={i} delay={i * 90} style={{ padding: "3rem 2rem", textAlign: "center", borderRight: i < 3 ? "1px solid rgba(255,255,255,0.12)" : "none" }}>
               <div style={{
@@ -200,7 +200,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "1.5rem", position: "relative" }}>
+        <div className="rg-5" style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "1.5rem", position: "relative" }}>
           {/* Connector line */}
           <div style={{
             position: "absolute", top: 40, left: "10%", right: "10%",
@@ -263,7 +263,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
+        <div className="rg-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
           {services.map((svc) => (
             <Link key={svc.id} href={`/services#${svc.id}`} style={{ textDecoration: "none", display: "block" }}>
               <TiltCard
@@ -439,14 +439,12 @@ export default function Home() {
       </section>
 
       <style>{`
-        @media (max-width: 900px) {
-          .pipeline-grid { grid-template-columns: repeat(3,1fr) !important; }
-          .services-grid  { grid-template-columns: 1fr 1fr !important; }
-          .stats-grid     { grid-template-columns: repeat(2,1fr) !important; }
-        }
         @media (max-width: 580px) {
-          .services-grid  { grid-template-columns: 1fr !important; }
-          .pipeline-grid  { grid-template-columns: 1fr 1fr !important; }
+          .hero-section { padding: 6rem 4% 3rem !important; min-height: auto !important; }
+          .hero-section h1 { font-size: clamp(2.4rem, 9vw, 3.5rem) !important; }
+        }
+        @media (max-width: 900px) {
+          .testimonials-track { animation-duration: 60s !important; }
         }
       `}</style>
     </>

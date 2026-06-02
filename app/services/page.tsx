@@ -89,7 +89,7 @@ export default function ServicesPage() {
               animationDelay: `${i * 1.2}s`,
             }} />
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6rem", alignItems: "center", position: "relative" }}>
+            <div className="rg-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6rem", alignItems: "center", position: "relative" }}>
               {/* ── Text ── */}
               <Reveal3D
                 className={i % 2 === 0 ? "reveal-3d" : "reveal-3d"}
@@ -119,7 +119,7 @@ export default function ServicesPage() {
                 </p>
 
                 {/* Feature checklist with stagger */}
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.65rem", marginBottom: "2rem" }}>
+                <div className="rg-form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.65rem", marginBottom: "2rem" }}>
                   {svc.features.map((f, fi) => (
                     <Reveal3D key={f} delay={fi * 60} style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.84rem", color: "rgba(240,246,255,0.65)" }}>
                       <span style={{ color: colorMap[svc.color], flexShrink: 0, marginTop: "0.1rem", fontWeight: 700, fontSize: "0.8rem" }}>✓</span>
@@ -232,10 +232,8 @@ export default function ServicesPage() {
       </section>
 
       <style>{`
-        @media (max-width: 900px) {
-          section > div > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
-          section > div > div > div[style*="order"] { order: 0 !important; }
-          .reveal-3d[style*="order"] { order: 0 !important; }
+        @media (max-width: 580px) {
+          .services-header { padding: 6rem 4% 3rem !important; }
         }
       `}</style>
     </>

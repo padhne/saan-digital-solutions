@@ -83,7 +83,7 @@ export default function CareersPage() {
           </div>
         </Reveal3D>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
+        <div className="rg-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
           {perks.map((p, i) => (
             <Reveal3D key={p.title} delay={i * 80}>
               <TiltCard
@@ -116,7 +116,7 @@ export default function CareersPage() {
         <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
           {jobs.map((job, i) => (
             <Reveal3D key={job.id} delay={i * 80}>
-              <div className="hover-3d-slide" style={{
+              <div className="hover-3d-slide rg-job-row" style={{
                 background: "var(--card2)", border: "1px solid var(--border)", borderRadius: 20,
                 padding: "2rem", display: "grid", gridTemplateColumns: "1fr auto",
                 gap: "2rem", alignItems: "center",

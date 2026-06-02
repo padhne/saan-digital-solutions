@@ -658,3 +658,101 @@ body {
 @media (max-width: 900px) {
   .hide-mobile { display: none !important; }
 }
+
+/* ==================== MOBILE / RESPONSIVE ==================== */
+
+/* Touch devices — hide custom cursor */
+@media (hover: none) and (pointer: coarse) {
+  .cursor, .cursor-ring { display: none !important; }
+}
+
+/* ── Responsive grid classes (override inline styles via !important) ──
+   Add these classNames to grid container divs in pages/components.      */
+
+/* 2-col → 1-col at tablet */
+@media (max-width: 860px) {
+  .rg-2 {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  /* Fix service-detail child ordering on mobile */
+  .rg-2 > *[style*="order: 1"],
+  .rg-2 > *[style*="order:1"] { order: 0 !important; }
+}
+
+/* 3-col → 2-col at 900px → 1-col at 580px */
+@media (max-width: 900px) {
+  .rg-3 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 580px) {
+  .rg-3 { grid-template-columns: 1fr !important; }
+}
+
+/* 4-col → 2-col at 900px */
+@media (max-width: 900px) {
+  .rg-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  /* Remove horizontal stat borders, add bottom border between rows */
+  .rg-4 > .reveal-3d { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; }
+  .rg-4 > .reveal-3d:nth-last-child(-n+2) { border-bottom: none !important; }
+}
+
+/* 5-col → 3-col at 900px → 2-col at 580px */
+@media (max-width: 900px) {
+  .rg-5 { grid-template-columns: repeat(3, 1fr) !important; }
+}
+@media (max-width: 580px) {
+  .rg-5 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+/* Contact section (1fr 380px → 1fr) */
+@media (max-width: 860px) {
+  .rg-contact { grid-template-columns: 1fr !important; gap: 3rem !important; }
+}
+
+/* Footer (1.8fr 1fr 1fr 1fr → 1fr 1fr → 1fr) */
+@media (max-width: 900px) {
+  .rg-footer { grid-template-columns: 1fr 1fr !important; gap: 2.5rem !important; }
+}
+@media (max-width: 580px) {
+  .rg-footer { grid-template-columns: 1fr !important; gap: 2rem !important; }
+}
+
+/* Form 2-col rows — collapse on small mobile */
+@media (max-width: 500px) {
+  .rg-form-row { grid-template-columns: 1fr !important; }
+}
+
+/* Job card (1fr auto → 1fr, button stacks below) */
+@media (max-width: 640px) {
+  .rg-job-row { grid-template-columns: 1fr !important; gap: 1.2rem !important; }
+}
+
+/* ── Section padding reduction on mobile ── */
+@media (max-width: 900px) {
+  .sec-header { padding-top: 7rem !important; padding-bottom: 4rem !important; }
+  .sec-body   { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+}
+@media (max-width: 580px) {
+  .sec-header { padding-top: 6rem !important; padding-bottom: 3rem !important; }
+  .sec-body   { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+}
+
+/* ── Hero CTA buttons stack on small mobile ── */
+@media (max-width: 480px) {
+  .hero-ctas { flex-direction: column !important; align-items: stretch !important; }
+  .hero-ctas > * { text-align: center !important; justify-content: center !important; }
+}
+
+/* ── Blog article list rows (flex row → column) ── */
+@media (max-width: 640px) {
+  .blog-row { flex-direction: column !important; gap: 1.2rem !important; }
+  .blog-row-img { width: 100% !important; height: 180px !important; flex-shrink: unset !important; border-radius: 12px !important; }
+}
+
+/* ── General mobile safety ── */
+@media (max-width: 900px) {
+  body  { overflow-x: hidden; }
+  img   { max-width: 100%; }
+  /* Chatbot: smaller on mobile */
+  #crisp-chatbox { bottom: 70px !important; }
+}

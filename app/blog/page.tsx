@@ -78,7 +78,7 @@ export default function BlogPage() {
           </div>
         </Reveal3D>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "2rem", marginBottom: "5rem" }}>
+        <div className="rg-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "2rem", marginBottom: "5rem" }}>
           {featured.map((post, i) => (
             <Reveal3D key={post.slug} delay={i * 100}>
               <Link href={`/blog/${post.slug}`} style={{ textDecoration: "none", display: "block", height: "100%" }}>
@@ -127,7 +127,7 @@ export default function BlogPage() {
                   background: "var(--card)", border: "1px solid var(--border)", borderRadius: 20,
                   padding: "2rem", display: "flex", gap: "2rem", alignItems: "center",
                 }}
-                  className="hover-3d-slide"
+                  className="hover-3d-slide blog-row"
                 >
                   <div className="hover-icon-3d" style={{ fontSize: "2rem", flexShrink: 0 }}>
                     {post.emoji}

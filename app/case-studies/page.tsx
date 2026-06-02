@@ -59,7 +59,7 @@ export default function CaseStudiesPage() {
           </div>
         </Reveal3D>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "2rem" }}>
+        <div className="rg-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "2rem" }}>
           {featured.map((cs, i) => (
             <Reveal3D key={cs.slug} delay={i * 120}>
               <Link href={`/case-studies/${cs.slug}`} style={{ textDecoration: "none", display: "block", height: "100%" }}>
@@ -108,7 +108,7 @@ export default function CaseStudiesPage() {
 
       {/* Rest */}
       <section data-theme="light" style={{ padding: "0 5% 7rem", background: "#EEF0FF" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "1.5rem" }}>
+        <div className="rg-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "1.5rem" }}>
           {rest.map((cs, i) => (
             <Reveal3D key={cs.slug} delay={i * 90}>
               <Link href={`/case-studies/${cs.slug}`} style={{ textDecoration: "none", display: "block", height: "100%" }}>

@@ -45,7 +45,7 @@ export default function Footer() {
       }} />
 
       <div style={{ padding: "4rem 5% 0", position: "relative" }}>
-        <div style={{
+        <div className="rg-footer" style={{
           display: "grid", gridTemplateColumns: "1.8fr 1fr 1fr 1fr",
           gap: "4rem", marginBottom: "4rem",
         }}>
@@ -139,7 +139,7 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom Bar ── */}
-        <div style={{
+        <div className="footer-bottom" style={{
           display: "flex", justifyContent: "space-between", alignItems: "center",
           padding: "1.75rem 0 2.5rem",
           borderTop: "1px solid rgba(255,255,255,0.06)",
@@ -165,11 +165,10 @@ export default function Footer() {
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
-          footer .footer-grid { grid-template-columns: 1fr 1fr !important; }
-        }
         @media (max-width: 580px) {
-          footer .footer-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          footer { padding-left: 4% !important; padding-right: 4% !important; }
+          footer .footer-bottom { flex-direction: column !important; gap: 0.75rem !important; text-align: center !important; }
+          footer .footer-bottom > div:last-child { justify-content: center !important; }
         }
       `}</style>
     </footer>

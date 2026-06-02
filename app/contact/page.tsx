@@ -76,7 +76,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form + Info */}
-      <section data-theme="light" style={{ padding: "7rem 5%", background: "#FFFFFF", display: "grid", gridTemplateColumns: "1fr 380px", gap: "6rem", alignItems: "start" }}>
+      <section data-theme="light" className="rg-contact" style={{ padding: "7rem 5%", background: "#FFFFFF", display: "grid", gridTemplateColumns: "1fr 380px", gap: "6rem", alignItems: "start" }}>
         {/* Form */}
         <div ref={formRef} className="reveal-3d">
           {submitted ? (
@@ -106,7 +106,7 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+              <div className="rg-form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>
                   <label style={{ fontSize: "0.75rem", color: "var(--white-dim)", letterSpacing: "0.05em", fontWeight: 500 }}>Your Name *</label>
                   <input required value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Rajesh Shrestha" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: "0.85rem 1rem", color: "var(--white)", fontSize: "0.9rem", outline: "none", fontFamily: "'Inter', sans-serif", transition: "border-color 0.25s, box-shadow 0.25s, transform 0.25s" }} onFocus={e => { (e.target as HTMLInputElement).style.borderColor = "var(--accent)"; (e.target as HTMLInputElement).style.boxShadow = "0 0 0 3px var(--accent-dim)"; (e.target as HTMLInputElement).style.transform = "perspective(400px) translateZ(4px)"; }} onBlur={e => { (e.target as HTMLInputElement).style.borderColor = "var(--border)"; (e.target as HTMLInputElement).style.boxShadow = "none"; (e.target as HTMLInputElement).style.transform = "none"; }} />
@@ -116,7 +116,7 @@ export default function ContactPage() {
                   <input required type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="hello@yourbiz.com" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: "0.85rem 1rem", color: "var(--white)", fontSize: "0.9rem", outline: "none", fontFamily: "'Inter', sans-serif", transition: "border-color 0.25s, box-shadow 0.25s, transform 0.25s" }} onFocus={e => { (e.target as HTMLInputElement).style.borderColor = "var(--accent)"; (e.target as HTMLInputElement).style.boxShadow = "0 0 0 3px var(--accent-dim)"; (e.target as HTMLInputElement).style.transform = "perspective(400px) translateZ(4px)"; }} onBlur={e => { (e.target as HTMLInputElement).style.borderColor = "var(--border)"; (e.target as HTMLInputElement).style.boxShadow = "none"; (e.target as HTMLInputElement).style.transform = "none"; }} />
                 </div>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+              <div className="rg-form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>
                   <label style={{ fontSize: "0.75rem", color: "var(--white-dim)", letterSpacing: "0.05em", fontWeight: 500 }}>Phone / WhatsApp</label>
                   <input value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} placeholder="+977 98XXXXXXXX" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: "0.85rem 1rem", color: "var(--white)", fontSize: "0.9rem", outline: "none", fontFamily: "'Inter', sans-serif", transition: "border-color 0.25s, box-shadow 0.25s, transform 0.25s" }} onFocus={e => { (e.target as HTMLInputElement).style.borderColor = "var(--accent)"; (e.target as HTMLInputElement).style.boxShadow = "0 0 0 3px var(--accent-dim)"; (e.target as HTMLInputElement).style.transform = "perspective(400px) translateZ(4px)"; }} onBlur={e => { (e.target as HTMLInputElement).style.borderColor = "var(--border)"; (e.target as HTMLInputElement).style.boxShadow = "none"; (e.target as HTMLInputElement).style.transform = "none"; }} />

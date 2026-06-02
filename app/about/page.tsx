@@ -59,7 +59,7 @@ export default function AboutPage() {
         <div className="float-3d" style={{ position: "absolute", right: "18%", bottom: "12%", width: 90, height: 90, borderRadius: "50%", border: "1px solid rgba(192,132,252,0.1)", pointerEvents: "none", animationDelay: "2.5s" }} />
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 60% at 30% 50%, rgba(124,111,244,0.1) 0%, transparent 60%)" }} />
 
-        <div style={{ position: "relative", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6rem", alignItems: "center" }}>
+        <div className="rg-2" style={{ position: "relative", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6rem", alignItems: "center" }}>
           {/* Text */}
           <div>
             <span className="badge" style={{ animation: "fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) both" }}>About Us</span>
@@ -97,7 +97,7 @@ export default function AboutPage() {
 
       {/* ── Story ── */}
       <section data-theme="light" style={{ padding: "7rem 5%", background: "#FFFFFF" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6rem", alignItems: "start" }}>
+        <div className="rg-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6rem", alignItems: "start" }}>
           {/* Story column */}
           <div>
             <Reveal3D>
@@ -156,7 +156,7 @@ export default function AboutPage() {
           </div>
         </Reveal3D>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
+        <div className="rg-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
           {team.map((member, i) => (
             <Reveal3D key={member.name} delay={i * 80}>
               <TiltCard
@@ -213,13 +213,8 @@ export default function AboutPage() {
       </section>
 
       <style>{`
-        @media (max-width: 900px) {
-          section > div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
-          section > div[style*="grid-template-columns: repeat(3"] { grid-template-columns: 1fr 1fr !important; }
-          .reveal-3d-grid-wrapper { grid-template-columns: 1fr 1fr !important; }
-        }
         @media (max-width: 580px) {
-          section > div[style*="grid-template-columns: repeat(3"] { grid-template-columns: 1fr !important; }
+          .about-header { padding: 6rem 4% 3rem !important; }
         }
       `}</style>
     </>
