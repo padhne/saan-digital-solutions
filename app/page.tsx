@@ -322,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* ══════════════════ TESTIMONIALS ══════════════════ */}
-      <section style={{ padding: "8rem 0", background: "#06101E", position: "relative", overflow: "hidden" }}>
+      <section className="home-testimonials" style={{ padding: "8rem 0", background: "#06101E", position: "relative", overflow: "hidden" }}>
         {/* ambient glow */}
         <div style={{
           position: "absolute", top: "50%", left: "50%",
@@ -352,13 +352,13 @@ export default function Home() {
           </p>
         </div>
 
-        <div style={{ overflow: "hidden", position: "relative" }}>
+        <div className="testimonials-track-wrapper" style={{ overflow: "hidden", position: "relative" }}>
           <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 150, background: "linear-gradient(90deg, #06101E, transparent)", zIndex: 2, pointerEvents: "none" }} />
           <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 150, background: "linear-gradient(-90deg, #06101E, transparent)", zIndex: 2, pointerEvents: "none" }} />
 
-          <div style={{ display: "flex", gap: "1.5rem", animation: "scrollLeft 40s linear infinite", width: "max-content" }}>
+          <div className="testimonials-track" style={{ display: "flex", gap: "1.5rem", animation: "scrollLeft 40s linear infinite", width: "max-content" }}>
             {[...testimonials, ...testimonials].map((t, i) => (
-              <div key={i} style={{
+              <div key={i} className="testimonial-card" style={{
                 background: "linear-gradient(135deg, #0F1A2E 0%, #0B1524 100%)",
                 border: "1px solid rgba(124,111,244,0.14)",
                 borderRadius: 20, padding: "2rem 2.2rem",

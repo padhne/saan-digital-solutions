@@ -743,6 +743,21 @@ body {
   .hero-ctas > * { text-align: center !important; justify-content: center !important; }
 }
 
+/* ── Home testimonial slider becomes stack on mobile ── */
+@media (max-width: 760px) {
+  .home-testimonials .testimonials-track {
+    width: 100% !important;
+    animation: none !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .home-testimonials .testimonial-card {
+    min-width: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
 /* ── Blog article list rows (flex row → column) ── */
 @media (max-width: 640px) {
   .blog-row { flex-direction: column !important; gap: 1.2rem !important; }
