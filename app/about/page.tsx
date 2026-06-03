@@ -20,12 +20,12 @@ export const metadata = {
 };
 
 const team = [
-  { name: "Nawaj Sarif", role: "CEO & Head of Organic Growth", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--accent)", bio: "Full-stack developer and digital growth strategist. Built SAAN Digital Solutions to solve the gap between tech and marketing. 5+ years in SEO. Expert in technical SEO, link building, and the emerging GEO landscape." },
-  { name: "Samir Raeen", role: "Managing Director & Lead Developer", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--blue)", bio: "React, Next.js and Node.js specialist. Passionate about performance and clean architecture." },
+  { name: "Nawaj Sarif", role: "CEO & Head of Organic Growth", photo: "/nawaj.jpeg", color: "var(--accent)", bio: "Full-stack developer and digital growth strategist. Built SAAN Digital Solutions to solve the gap between tech and marketing. 5+ years in SEO. Expert in technical SEO, link building, and the emerging GEO landscape." },
+  { name: "Samir Raeen", role: "Managing Director & Lead Developer", photo: "/samir.jpeg", color: "var(--blue)", bio: "React, Next.js and Node.js specialist. Passionate about performance and clean architecture." },
   { name: "Tahir Hussain", role: "Business Development Manager", photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--orange)", bio: "Business development expert with a track record of driving growth and partnerships." },
-  { name: "Sweta Shrestha", role: "Full-Stack Developer", photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--pink)", bio: "Full-stack developer with expertise in modern web technologies and scalable architecture." },
+  { name: "Sweta Shrestha", role: "Full-Stack Developer", photo: "/sweata.jpeg", color: "var(--pink)", bio: "Full-stack developer with expertise in modern web technologies and scalable architecture." },
   { name: "Yuvraj Singh", role: "Full-stack AI Developer", photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--cyan)", bio: "AI enthusiast and full-stack developer with a passion for creating intelligent applications." },
-  { name: "Laxman Magrati", role: "Mobile App Developer", photo: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--green)", bio: "Mobile app developer with experience in building cross-platform applications." },
+  { name: "Laxman Magrati", role: "Mobile App Developer", photo: "/laxman.png", color: "var(--green)", bio: "Mobile app developer with experience in building cross-platform applications." },
 ];
 
 const statsData = [
