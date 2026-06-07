@@ -19,9 +19,9 @@ const footerLinks = {
   ],
   Connect: [
     { label: "YouTube",   href: "#"                             },
-    { label: "Instagram", href: "#"                             },
+    { label: "Instagram", href: "https://www.instagram.com/saan_digital_solutions/" },
     { label: "LinkedIn",  href: "#"                             },
-    { label: "Facebook",  href: "#"                             },
+    { label: "Facebook",  href: "https://www.facebook.com/saandigitalsolutions" },
     { label: "TikTok",    href: "#"                             },
     { label: "Email Us",  href: "mailto:hello@saandigitalsolutions.com"  },
   ],
@@ -77,18 +77,18 @@ export default function Footer() {
                 background: "#34D399", display: "inline-block",
                 boxShadow: "0 0 8px #34D399",
               }} />
-              Kathmandu, Nepal 🇳🇵
+              Kathmandu · Janakpur 🇳🇵
             </div>
 
             {/* Social icons */}
             <div style={{ display: "flex", gap: "0.6rem" }}>
               {[
-                { icon: "▶", label: "YouTube" },
-                { icon: "📸", label: "Instagram" },
-                { icon: "in", label: "LinkedIn" },
-                { icon: "f", label: "Facebook" },
+                { icon: "▶", label: "YouTube", href: "#" },
+                { icon: "📸", label: "Instagram", href: "https://www.instagram.com/saan_digital_solutions/" },
+                { icon: "in", label: "LinkedIn", href: "#" },
+                { icon: "f", label: "Facebook", href: "https://www.facebook.com/saandigitalsolutions" },
               ].map(s => (
-                <a key={s.label} href="#" title={s.label} style={{
+                <a key={s.label} href={s.href} title={s.label} target={s.href !== "#" ? "_blank" : undefined} rel="noopener noreferrer" style={{
                   width: 36, height: 36, borderRadius: 10,
                   background: "rgba(255,255,255,0.05)",
                   border: "1px solid rgba(255,255,255,0.08)",

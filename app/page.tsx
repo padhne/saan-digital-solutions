@@ -345,7 +345,7 @@ export default function Home() {
               background: "linear-gradient(135deg, #A78BFA 0%, #F472B6 100%)",
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
               backgroundClip: "text",
-            }}>150+ Businesses</span>
+            }}>10+ Businesses</span>
           </h2>
           <p style={{ fontSize: "1rem", color: "rgba(240,246,255,0.55)", lineHeight: 1.75 }}>
             Real results. Real clients. Real Nepal businesses growing online.
@@ -418,13 +418,13 @@ export default function Home() {
             </span>
           </h2>
           <p style={{ fontSize: "1.1rem", color: "rgba(240,246,255,0.6)", lineHeight: 1.8, maxWidth: 520, margin: "0 auto 3rem" }}>
-            Join 150+ businesses that chose SAAN Digital Solutions. From first line of code to first paying customer.
+            Join 10+ businesses that chose SAAN Digital Solutions. From first line of code to first paying customer.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "2rem" }}>
             <Link href="/contact" className="btn-primary" style={{ fontSize: "1rem", padding: "1rem 2.8rem" }}>
               Start Your Project →
             </Link>
-            <a href="https://wa.me/977XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ fontSize: "1rem", padding: "1rem 2.2rem" }}>
+            <a href="https://wa.me/9779824864187" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ fontSize: "1rem", padding: "1rem 2.2rem" }}>
               💬 WhatsApp Us
             </a>
           </div>

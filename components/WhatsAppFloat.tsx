@@ -3,7 +3,7 @@
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/977XXXXXXXXXX?text=Hello%20SAAN%20Digital!%20I%20want%20to%20grow%20my%20business."
+      href="https://wa.me/9779824864187?text=Hello%20SAAN%20Digital!%20I%20want%20to%20grow%20my%20business."
       target="_blank"
       rel="noopener noreferrer"
       style={{

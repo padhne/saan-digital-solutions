@@ -100,7 +100,7 @@ export default function RootLayout({
                   "numberOfEmployees": { "@type": "QuantitativeValue", "value": 10 },
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Kathmandu",
+                    "streetAddress": "Kathmandu & Pidari Chowk, Janakpur",
                     "addressLocality": "Kathmandu",
                     "addressRegion": "Bagmati Province",
                     "postalCode": "44600",

@@ -20,12 +20,12 @@ export const metadata = {
 };
 
 const team = [
-  { name: "Nawaj Sarif", role: "CEO & Head of Organic Growth", photo: "/nawaj.jpeg", color: "var(--accent)", bio: "Full-stack developer and digital growth strategist. Built SAAN Digital Solutions to solve the gap between tech and marketing. 5+ years in SEO. Expert in technical SEO, link building, and the emerging GEO landscape." },
-  { name: "Samir Raeen", role: "Managing Director & Lead Developer", photo: "/samir.jpeg", color: "var(--blue)", bio: "React, Next.js and Node.js specialist. Passionate about performance and clean architecture." },
-  { name: "Tahir Hussain", role: "Business Development Manager", photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--orange)", bio: "Business development expert with a track record of driving growth and partnerships." },
-  { name: "Sweta Shrestha", role: "Full-Stack Developer", photo: "/sweata.jpeg", color: "var(--pink)", bio: "Full-stack developer with expertise in modern web technologies and scalable architecture." },
-  { name: "Yuvraj Singh", role: "Full-stack AI Developer", photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80", color: "var(--cyan)", bio: "AI enthusiast and full-stack developer with a passion for creating intelligent applications." },
-  { name: "Laxman Magrati", role: "Mobile App Developer", photo: "/laxman.png", color: "var(--green)", bio: "Mobile app developer with experience in building cross-platform applications." },
+  { name: "Nawaj Sarif", role: "CEO & Head of Organic Growth", photo: "/nawaj.jpeg", photoPos: "center top", color: "var(--accent)", bio: "Full-stack developer and digital growth strategist. Built SAAN Digital Solutions to solve the gap between tech and marketing. 5+ years in SEO. Expert in technical SEO, link building, and the emerging GEO landscape." },
+  { name: "Samir Raeen", role: "Managing Director & Lead Developer", photo: "/samir.jpeg", photoPos: "center top", color: "var(--blue)", bio: "React, Next.js and Node.js specialist. Passionate about performance and clean architecture." },
+  { name: "Tahir Hussain", role: "Business Development Manager", photo: "/tahir%20hussain.png", photoPos: "center top", color: "var(--orange)", bio: "Business development expert with a track record of driving growth and partnerships." },
+  { name: "Sweta Shrestha", role: "Full-Stack Developer", photo: "/sweta.png", photoPos: "center 20%", color: "var(--pink)", bio: "Full-stack developer with expertise in modern web technologies and scalable architecture." },
+  { name: "Yuvraj Singh", role: "Full-stack AI Developer", photo: "/yuvraj.png", photoPos: "center top", color: "var(--cyan)", bio: "AI enthusiast and full-stack developer with a passion for creating intelligent applications." },
+  { name: "Laxman Magrati", role: "Mobile App Developer", photo: "/laxman.png", photoPos: "center top", color: "var(--green)", bio: "Mobile app developer with experience in building cross-platform applications." },
 ];
 
 const statsData = [
@@ -71,7 +71,7 @@ export default function AboutPage() {
               SAAN Digital Solutions was founded on a simple observation: most agencies either build things OR market things. Very few do both excellently. We built a team that does both — and then some.
             </p>
             <p style={{ fontSize: "0.95rem", color: "var(--white-dim)", lineHeight: 1.8, animation: "fadeUp 0.8s 0.24s cubic-bezier(0.16,1,0.3,1) both" }}>
-              Since 2021, we&apos;ve helped 150+ businesses across Nepal and internationally turn their digital presence into their biggest revenue driver.
+              Since 2021, we&apos;ve helped 10+ businesses across Nepal and internationally turn their digital presence into their biggest revenue driver.
             </p>
           </div>
 
@@ -169,9 +169,9 @@ export default function AboutPage() {
                   <img
                     src={member.photo}
                     alt={member.name}
-                    width={72}
-                    height={72}
-                    style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `2px solid ${member.color}60`, display: "block", transition: "transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s" }}
+                    width={96}
+                    height={96}
+                    style={{ width: 96, height: 96, borderRadius: "50%", objectFit: "cover", objectPosition: member.photoPos, border: `2px solid ${member.color}60`, display: "block", transition: "transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s" }}
                   />
                   {/* Color ring decoration */}
                   <div style={{ position: "absolute", inset: -4, borderRadius: "50%", border: `1px solid ${member.color}30`, pointerEvents: "none" }} />

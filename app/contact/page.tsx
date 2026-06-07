@@ -2,17 +2,18 @@
 import { useState, useEffect, useRef } from "react";
 
 const contactItems = [
-  { icon: "📍", label: "Location", value: "Kathmandu, Nepal · Serving worldwide" },
+  { icon: "📍", label: "Kathmandu Office", value: "Kathmandu, Nepal · Serving worldwide" },
+  { icon: "📍", label: "Janakpur Office", value: "Pidari Chowk, Janakpur, Nepal" },
   { icon: "📧", label: "Email", value: "hello@saandigitalsolutions.com", href: "mailto:hello@saandigitalsolutions.com" },
-  { icon: "💬", label: "WhatsApp Nepal", value: "+977 98XX-XXXXXX", href: "https://wa.me/977XXXXXXXXXX" },
+  { icon: "💬", label: "WhatsApp Nepal", value: "+977 9824864187", href: "https://wa.me/9779824864187" },
   { icon: "⏰", label: "Response Time", value: "Within 2 hours · Sun–Fri 9am–6pm NPT" },
 ];
 
 const socials = [
-  { icon: "▶", label: "YouTube" },
-  { icon: "📸", label: "Instagram" },
-  { icon: "in", label: "LinkedIn" },
-  { icon: "f", label: "Facebook" },
+  { icon: "▶", label: "YouTube", href: "#" },
+  { icon: "📸", label: "Instagram", href: "https://www.instagram.com/saan_digital_solutions/" },
+  { icon: "in", label: "LinkedIn", href: "#" },
+  { icon: "f", label: "Facebook", href: "https://www.facebook.com/saandigitalsolutions" },
 ];
 
 function useReveal3D(delay = 0) {
@@ -87,7 +88,7 @@ export default function ContactPage() {
               <div style={{ fontSize: "4rem", marginBottom: "1.5rem", animation: "float3d 4s ease-in-out infinite", display: "inline-block", transformStyle: "preserve-3d" }}>🎉</div>
               <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.8rem", fontWeight: 800, marginBottom: "1rem" }}>Message Sent!</h2>
               <p style={{ color: "var(--white-dim)", lineHeight: 1.7 }}>We&apos;ve received your message and will be in touch within 2 hours. In the meantime, feel free to WhatsApp us for faster response.</p>
-              <a href="https://wa.me/977XXXXXXXXXX" target="_blank" style={{
+              <a href="https://wa.me/9779824864187" target="_blank" style={{
                 display: "inline-block", marginTop: "2rem", background: "#25D366", color: "#000",
                 padding: "0.8rem 2rem", borderRadius: 100, fontSize: "0.9rem", fontWeight: 700, textDecoration: "none",
                 transition: "transform 0.3s, box-shadow 0.3s",
@@ -181,7 +182,7 @@ export default function ContactPage() {
               <span style={{ width: 20, height: 1, background: "var(--accent)" }} /> Contact Info
             </div>
             <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.4rem", fontWeight: 700, letterSpacing: "-0.03em" }}>
-              Based in Kathmandu,<br />Nepal
+              Kathmandu &amp; Janakpur,<br />Nepal
             </h3>
           </div>
 
@@ -223,7 +224,7 @@ export default function ContactPage() {
             <div style={{ fontSize: "0.72rem", color: "var(--white-faint)", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "1rem" }}>Follow Us</div>
             <div style={{ display: "flex", gap: "0.75rem" }}>
               {socials.map((s, i) => (
-                <a key={s.label} href="#" title={s.label} style={{
+                <a key={s.label} href={s.href} title={s.label} target={s.href !== "#" ? "_blank" : undefined} rel="noopener noreferrer" style={{
                   width: 42, height: 42, borderRadius: 10,
                   background: "var(--card)", border: "1px solid var(--border)",
                   display: "flex", alignItems: "center", justifyContent: "center",
