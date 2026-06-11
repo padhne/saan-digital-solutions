@@ -7,7 +7,8 @@
       "Read(//mnt/d/saantech/**)",
       "Bash(npx next *)",
       "Bash(del \"d:\\\\saan-digital-solutions\\\\app\\\\favicon.ico\")",
-      "PowerShell(Remove-Item \"d:\\\\saan-digital-solutions\\\\app\\\\favicon.ico\" -Confirm:$false)"
+      "PowerShell(Remove-Item \"d:\\\\saan-digital-solutions\\\\app\\\\favicon.ico\" -Confirm:$false)",
+      "Bash(Remove-Item \"d:\\\\saan-digital-solutions\\\\public\\\\c6d0d278f1dd4b9ebae8123a2593a50a.txt\")"
     ]
   }
 }
